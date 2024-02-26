@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header"></header>
+  <main class="main">
+    <section class="contacts">
+      <div class="container">
+        <h1 class="contacts-title">Контакты</h1>
+        <div id="map" class="map"></div>
+        <div class="contacts__content">
+          <div class="contacts__description">
+            <h4 class="contacts__description-title">Контакты</h4>
+            <ul class="contacts__list">
+              <li class="contacts__list-item">
+                <div class="contacts__item-inner">
+                  <div class="contacts__item-info">
+                    <a class="contacts__item-label" href="tel:89000000000">8-900-000-00-00</a>
+                    <p class="contacts__item-desc">Москва</p>
+                  </div>
+                  <div class="contacts__item-info">
+                    <a class="contacts__item-label" href="tel:89000000000" id="tel">8-900-000-00-00</a>
+                    <p class="contacts__item-desc">Россия</p>
+                  </div>
+                </div>
+                <button class="copy__button copy__number" data-type="89000000000">
+                  <svg class="copy__button-svg" width="56.000000" height="56.000000" viewBox="0 0 56 56" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs> </defs>
+                    <rect id="button" width="55.000000" height="55000000" transform="translate(0.500000 0.500000)"
+                      fill-opacity="1.000000" />
+                    <rect id="icon" width="24.000000" height="24.000000" transform="translate(16.000000 16.000000)"
+                      fill-opacity="1" />
+                    <g clip-path="url(#clip0_1003)">
+                      <path id="Vector"
+                        d="M35.1428 24C36.1686 24 37 24.8314 37 25.8572L37 35.1428C37 36.1686 36.1686 37 35.1428 37L25.8572 37C24.8314 37 24 36.1686 24 35.1428L24 25.8572C24 24.8314 24.8314 24 25.8572 24L35.1428 24Z"
+                        stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000"
+                        stroke-linejoin="round" />
+                      <path id="Vector"
+                        d="M20.8572 32C19.8357 32 19 31.1643 19 30.1428L19 20.8572C19 19.8357 19.8357 19 20.8572 19L30.1428 19C31.1643 19 32 19.8357 32 20.8572"
+                        stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"
+                        stroke-linecap="round" />
+                    </g>
+                    <rect id="button" width="55.000000" height="55.000000" transform="translate(0.500000 0.500000)"
+                      stroke="currentColor" stroke-opacity="1.000000" stroke-width="1.000000" />
+                  </svg>
+                </button>
+              </li>
+              <li class="contacts__list-item">
+                <div class="contacts__item-info">
+                  <a class="contacts__item-label" id="email"
+                    href="mailto:metall-market@mail.ru">metall-market@mail.ru</a>
+                  <p class="contacts__item-desc">Ежедневно 9:00 — 18:00</p>
+                </div>
+                <button class="copy__button copy__email" data-type="metall-market@mail.ru">
+                  <svg class="copy__button-svg" width="56.000000" height="56.000000" viewBox="0 0 56 56" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs> </defs>
+                    <rect id="button" width="55.000000" height="55000000" transform="translate(0.500000 0.500000)"
+                      fill-opacity="1.000000" />
+                    <rect id="icon" width="24.000000" height="24.000000" transform="translate(16.000000 16.000000)"
+                      fill-opacity="1" />
+                    <g clip-path="url(#clip0_1003)">
+                      <path id="Vector"
+                        d="M35.1428 24C36.1686 24 37 24.8314 37 25.8572L37 35.1428C37 36.1686 36.1686 37 35.1428 37L25.8572 37C24.8314 37 24 36.1686 24 35.1428L24 25.8572C24 24.8314 24.8314 24 25.8572 24L35.1428 24Z"
+                        stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000"
+                        stroke-linejoin="round" />
+                      <path id="Vector"
+                        d="M20.8572 32C19.8357 32 19 31.1643 19 30.1428L19 20.8572C19 19.8357 19.8357 19 20.8572 19L30.1428 19C31.1643 19 32 19.8357 32 20.8572"
+                        stroke="currentColor" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"
+                        stroke-linecap="round" />
+                    </g>
+                    <rect id="button" width="55.000000" height="55.000000" transform="translate(0.500000 0.500000)"
+                      stroke="currentColor" stroke-opacity="1.000000" stroke-width="1.000000" />
+                  </svg>
+                </button>
+              </li>
+              <li class="contacts__list-item">
+                <div class="contacts__item-info">
+                  <p class="contacts__item-label">Адрес</p>
+                  <p class="contacts__item-desc">123456, г. Москва, ул. Ленина 3А, помещ. 2-7</p>
+                </div>
+              </li>
+              <li class="contacts__list-item">
+                <div class="contacts__item-info">
+                  <p class="contacts__item-label">Время работы</p>
+                  <p class="contacts__item-desc">Ежедневно 9:00 — 18:00</p>
+                </div>
+              </li>
+            </ul>
+            <div class="contacts__buttons">
+              <button class="contacts__button-map contacts__button"><p>Карта проезда</p></button>
+              <button class="contacts__button-call contacts__button"><p>Заказать звонок</p></button>
+            </div>
+          </div>
+          <div class="contacts__info">
+            <p class="contacts__info-text">Вход в офис находится на углу здания со стороны Ленинградского проспекта на
+              пересечении с ул. Балтийская.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="slider">
+      <div class="container">
+        <div class="slider__inner--office">
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-1.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-2.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-3.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-1.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-2.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-3.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-1.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-2.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-3.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-1.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-2.jpeg" alt="">
+          </div>
+          <div class="slider__item">
+            <img class="slider__item-img" src="img/office-slider/slide-3.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="command">
+      <div class="container">
+        <h2 class="command__title section-title">
+          Наша команда
+        </h2>
+        <p class="command__text">
+          Металл-Маркет — это команда профессионалов, влюбленных в свое дело.
+          Уверены, что развитие компании начинается с развития ее сотрудников.
+        </p>
+        <div class="command__slider">
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-1.jpeg" alt="1">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Ворончихин <br>
+                Сергей Вячеславович
+              </p>
+              <p class="command__slider-post">
+                Директор
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-2.jpeg" alt="2">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Ситникова <br>
+                Александра Константиновна
+              </p>
+              <p class="command__slider-post">
+                Офис-менеджер
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-3.jpeg" alt="3">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Лазарева <br>
+                Валерия Максимовна
+              </p>
+              <p class="command__slider-post">
+                Бухгалтер
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-4.jpeg" alt="4">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Наумов <br>
+                Илья Семёнович
+              </p>
+              <p class="command__slider-post">
+                Руководитель отдела продаж
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-1.jpeg" alt="1">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Ворончихин <br>
+                Сергей Вячеславович
+              </p>
+              <p class="command__slider-post">
+                Директор
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-2.jpeg" alt="2">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Ситникова <br>
+                Александра Константиновна
+              </p>
+              <p class="command__slider-post">
+                Офис-менеджер
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-3.jpeg" alt="3">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Лазарева <br>
+                Валерия Максимовна
+              </p>
+              <p class="command__slider-post">
+                Бухгалтер
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-4.jpeg" alt="4">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Наумов <br>
+                Илья Семёнович
+              </p>
+              <p class="command__slider-post">
+                Руководитель отдела продаж
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-1.jpeg" alt="1">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Ворончихин <br>
+                Сергей Вячеславович
+              </p>
+              <p class="command__slider-post">
+                Директор
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-2.jpeg" alt="2">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Ситникова <br>
+                Александра Константиновна
+              </p>
+              <p class="command__slider-post">
+                Офис-менеджер
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-3.jpeg" alt="3">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Лазарева <br>
+                Валерия Максимовна
+              </p>
+              <p class="command__slider-post">
+                Бухгалтер
+              </p>
+            </div>
+          </div>
+          <div class="command__slider-item">
+            <img class="command__slider-img" src="img/command-slider/slide-4.jpeg" alt="4">
+            <div class="command__slider-textbox">
+              <p class="command__slider-name">
+                Наумов <br>
+                Илья Семёнович
+              </p>
+              <p class="command__slider-post">
+                Руководитель отдела продаж
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="details">
+      <div class="container">
+        <div class="details__inner">
+          <h2 class="section-title">Реквизиты</h2>
+          <p class="details__text">
+            Металл-Маркет — компания, которая dolor sit amet consectetur. Ac sem nisi nullam mi odio. Justo eu egestas
+            arcu rhoncus
+            et. Eleifend morbi sit proin sed proin. Mattis purus sit malesuada in praesent ac nisi convallis. Lorem
+            ipsum
+            dolor sit
+            amet.
+          </p>
+          <table class="details__table">
+            <tr class="details__table-row">
+              <td class="details__table-name">Полное наименование</td>
+              <td class="details__table-item">
+                Металл-Маркет
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">Юридический адрес</td>
+              <td class="details__table-item">
+                123456, Россия, Москва, ул. Ленина, 145а, 801
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">ИНН</td>
+              <td class="details__table-item">
+                1234567890
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">КПП</td>
+              <td class="details__table-item">
+                123456789
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">ОГРН</td>
+              <td class="details__table-item">
+                1234567890987
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">Расчетный счет</td>
+              <td class="details__table-item">
+                12345678909876543210
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">Корреспондентский счет</td>
+              <td class="details__table-item">
+                12345678909876543210
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">БИК</td>
+              <td class="details__table-item">
+                123456789
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">Банк</td>
+              <td class="details__table-item">
+                ПАО «Сбербанк»
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+            <tr class="details__table-row">
+              <td class="details__table-name">Директор</td>
+              <td class="details__table-item">
+                Лебедев Кирилл Александрович
+                <img class="details__table-copy" src="img/copy-table.svg" alt="copy">
+              </td>
+            </tr>
+          </table>
+          <div class="details__download">
+            <button class="details__download-button">
+              <img class="details__download-img" src="img/details-download.jpeg" alt="download">
+            </button>
+            <div class="details__download-textbox">
+              <p class="details__download-text">Скачать реквизиты</p>
+              <p class="details__download-desc">Скачать pdf файл</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

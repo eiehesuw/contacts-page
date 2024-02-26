@@ -1,0 +1,288 @@
+@media (max-width: 1720px) {
+  .details {
+    &__text {
+      max-width: 900px;
+    }
+  }
+  .command {
+    .slick-slide {
+      margin: 0 12px;
+    }
+    .slick-list {
+      margin: 0 -12px;
+    }
+  }
+}
+
+@media (max-width: 1540px) {
+  .contacts {
+    .map {
+      height: 696px;
+    }
+    &__description {
+      margin: -645px 0 0 40px;
+    }
+    &__info {
+      width: 510px;
+      height: auto;
+      height: 124px;
+      margin: -645px 40px 0 0;
+    }
+  }
+  .slider {
+    .slick-dots {
+      width: 85%;
+    }
+  }
+
+  .command {
+    &__slider-textbox {
+      padding: 16px;
+    }
+    &__slider-name {
+      font-size: 14px;
+    }
+  }
+
+  .details {
+    &__text {
+      max-width: 770px;
+    }
+    &__table {
+      width: 100%;
+    }
+    &__table-name {
+      width: 416px;
+    }
+    &__table-item {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .contacts {
+    &-title {
+      font-size: 48px;
+      line-height: 56px;
+    }
+    &__description {
+      padding: 42px;
+    }
+    &__description-title {
+      font-size: 28px;
+    }
+    &__info {
+      padding: 24px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .details {
+    &__text {
+      max-width: 670px;
+    }
+    &__download {
+      width: 340px;
+    }
+    &__download-text {
+      font-size: 18px;
+    }
+  }
+  .slick-slide {
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 1320px) {
+  .contacts {
+    &__description {
+      padding: 24px;
+    }
+    &__list-item {
+      width: 410px;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .section-title {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .slider {
+    .slick-dots {
+      width: 83%;
+    }
+  }
+  .contacts {
+    .map {
+      height: 480px;
+    }
+    &__content {
+      flex-direction: column-reverse;
+    }
+    &__description {
+      width: 100%;
+      margin: 32px 0 0 0;
+      background-color: #fafafa;
+    }
+    &__description {
+      padding: 40px;
+    }
+    &__description-title {
+      font-size: 32px;
+    }
+    &__list-item {
+      width: 100%;
+    }
+    &__info {
+      margin: 32px 0 0 0;
+      width: 100%;
+      height: auto;
+      background-color: #fafafa;
+    }
+    &__info-text {
+      font-size: 18px;
+    }
+  }
+  .command {
+    .slick-track {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 1210px) {
+  .slick-dots {
+    width: 100%;
+    margin-left: 0;
+  }
+  .slider {
+    .slick-dots {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .command {
+    .slick-slide {
+      margin-top: 24px;
+      min-width: 450px;
+    }
+    .slick-dots {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 1170px) {
+  .section-title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .details {
+    &__table-name {
+      width: 25%;
+    }
+    &__download {
+      position: static;
+      margin-top: 32px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .slider {
+    .slick-slide {
+      margin: 0 12px;
+    }
+    .slick-list {
+      margin: 0;
+    }
+  }
+  .command {
+    .slick-slide {
+      max-width: 100vw;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .map {
+    height: 400px;
+  }
+  .contacts {
+    &__description {
+      padding: 40px 24px;
+    }
+    &__info-text {
+      font-size: 14px;
+    }
+  }
+  .details {
+    td {
+      padding: 16px;
+    }
+    &__download {
+      width: 100%;
+    }
+    &__table-copy {
+      display: none;
+    }
+  }
+  .command {
+    &__slider-item {
+      max-width: 70vw;
+    }
+    .slick-slide {
+      margin: 0;
+    }
+    .slick-list {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .contacts {
+    .map {
+      height: 351px;
+    }
+    &__item-inner {
+      flex-wrap: wrap;
+    }
+    &__buttons {
+      flex-wrap: wrap;
+    }
+    &__button {
+      width: 100%;
+    }
+  }
+  .section-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .details {
+    &__text {
+      font-size: 16px;
+    }
+    &__table {
+      border: none;
+    }
+    td {
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      padding: 16.5px 8px 16.5px 0;
+    }
+    &__table-name {
+      width: auto;
+    }
+  }
+}
+
+// @media (max-width: 430px) {
+//   .details {
+//   }
+// }
